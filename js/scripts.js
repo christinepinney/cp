@@ -102,7 +102,7 @@
 // check email
 function sendEmail() {
     var link = document.getElementById('send_email');
-    var subject = document.getElementById('subject').value;
+    var subject = "Contact request from personal website";
     var message = document.getElementById('message').value;
     var username = "pinney.16";
     var domain = "gmail.com";
