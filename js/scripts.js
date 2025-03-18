@@ -38,17 +38,6 @@
         }
     });
 
-    // check email
-    $('#send_email').click(function() {
-        var link = document.getElementById('send_email');
-        var subject = document.getElementById('subject').value;
-        var message = document.getElementById('comment').value;
-        var email = "pinney.16@gmail.com";
-        var href = "mailto:" + email + "?subject=" + subject + "&body=" + message;
-        console.log(href);
-        link.setAttribute("href", href);
-    });
-
     // Scroll to top
     $('#to-top').click(function() {
         $('html, body').animate({
@@ -109,3 +98,14 @@
     });
 
 })(jQuery);
+
+// check email
+function sendEmail() {
+    var link = document.getElementById('send_email');
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('comment').value;
+    var email = "pinney.16@gmail.com";
+    var href = "mailto:" + email + "?subject=" + subject + "&body=" + message;
+    console.log(href);
+    link.setAttribute("href", href);
+}
