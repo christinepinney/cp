@@ -100,7 +100,8 @@
 })(jQuery);
 
 // check email
-$('#send_email').addEventListener("click", function() {
+$('#send').addEventListener("click", function(e) {
+    e.preventDefault();
     var link = document.getElementById('send_email');
     var subject = document.getElementById('subject').value;
     var message = document.getElementById('message').value;
