@@ -230,11 +230,9 @@
     <div id="contact">
         <h2>Get in Touch</h2>
         <div id="contact-form">
-            <form method="POST" action="email.php">
-                <input id="email" type="email" name="_replyto" placeholder="Your email" required>
-                <textarea id="message" name="message" placeholder="Your message" required></textarea>
-                <button id="send" type="submit">Send</button>
-            </form>
+            <input id="email" type="email" name="_replyto" placeholder="Your email" required>
+            <textarea id="message" name="message" placeholder="Your message" required></textarea>
+            <button id="send" onclick="sendEmail(); return false">Send</button>
         </div>
         <!-- End #contact-form -->
     </div>

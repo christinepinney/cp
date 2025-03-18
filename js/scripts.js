@@ -100,16 +100,16 @@
 })(jQuery);
 
 // check email
-// function sendEmail() {
-//     var subject = "Contact request from personal website";
-//     var message = document.getElementById('message').value;
-//     var username = "pinney.16";
-//     var domain = "gmail.com";
-//     var href = "mailto:" + username + "@" + domain 
-//              + "&subject=" + encodeURIComponent(subject) 
-//              + "&body=" + encodeURIComponent(message);
+function sendEmail() {
+    var subject = "Contact request from personal website";
+    var message = document.getElementById('message').value;
+    var username = "pinney.16";
+    var domain = "gmail.com";
+    var href = "mailto:" + username + "@" + domain 
+             + "&subject=" + encodeURIComponent(subject) 
+             + "&body=" + encodeURIComponent(message);
     
-//     console.log(href);
+    console.log(href);
     
-//     window.location.href = href;
-// }
+    window.location.href = href;
+}
