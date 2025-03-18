@@ -101,7 +101,6 @@
 
 // check email
 function sendEmail() {
-    var link = document.getElementById('send_email');
     var subject = "Contact request from personal website";
     var message = document.getElementById('message').value;
     var username = "pinney.16";
@@ -112,5 +111,5 @@ function sendEmail() {
     
     console.log(href);
     
-    window.location.href = link;
+    window.location.href = href;
 }
