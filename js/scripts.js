@@ -100,14 +100,17 @@
 })(jQuery);
 
 // check email
-$('#send').addEventListener("click", function(e) {
-    e.preventDefault();
+function sendEmail() {
     var link = document.getElementById('send_email');
     var subject = document.getElementById('subject').value;
     var message = document.getElementById('message').value;
     var username = "pinney.16";
     var domain = "gmail.com";
-    var href = "mailto:" + username + "@" + domain + "?subject=" + subject + "&body=" + message;
+    var href = "mailto:" + username + "@" + domain 
+             + "?subject=" + encodeURIComponent(subject) 
+             + "&body=" + encodeURIComponent(message);
+    
     console.log(href);
-    link.setAttribute("href", href);
-});
+    
+    window.location.href = link;
+}
